@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -6,6 +7,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,
+  imports: [RouterModule]
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
